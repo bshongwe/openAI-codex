@@ -17,7 +17,7 @@ app.use(express.json())
 
 app.get('/', async (req, res) => {
   res.status(200).send({
-    message: 'Hi. I am CodeX!'
+    message: 'Hello from CodeX!'
   })
 })
 
@@ -41,7 +41,7 @@ app.post('/', async (req, res) => {
 
   } catch (error) {
     console.error(error)
-    res.status(500).send(error || 'Error: something is wrong');
+    res.status(500).send(error || 'Something went wrong');
   }
 })
 
